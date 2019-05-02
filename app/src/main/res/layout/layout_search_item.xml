@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+        <LinearLayout
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@id/holderFollow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginEnd="8dp"
+        android:layout_toStartOf="@id/holderFollow">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/searchedimage"
+            android:layout_margin="9dp"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:background="@drawable/drawable_circle"
+            />
+
+        <TextView
+            android:id="@+id/searchedtitle"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textAppearance="@style/Custom_Font_Apperance_OuterContent_H2"
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_alignParentRight="true"
+            android:id="@+id/holderFollow"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_alignParentEnd="true">
+                <RelativeLayout
+                    android:id="@+id/button"
+                    android:paddingRight="14dp"
+                    android:paddingLeft="14dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/card_button_reader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="33dp"
+                    android:layout_marginEnd="15dp">
+                    <TextView
+                        android:id="@+id/buttontitle"
+                        android:textSize="13.5sp"
+                        android:textAppearance="@style/Custom_Font_Roboto"
+                        android:textColor="#000"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+        </RelativeLayout>
+</RelativeLayout>
+
+
+
+

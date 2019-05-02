@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="zkagazapahtnajusz.paperproject.com.paperproject.ReaderEngine.Reader">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:background="#fff"
+        android:layout_alignParentTop="true"
+        android:elevation="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <LinearLayout
+            android:elevation="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:gravity="right|center">
+
+            <ImageView
+                android:id="@+id/buttonToc"
+                android:layout_marginRight="8dp"
+                android:padding="6.5dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icon_toc"
+                />
+
+            <ImageView
+                android:id="@+id/buttonBookmark"
+                android:layout_marginRight="8dp"
+                android:padding="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icon_bookmark"
+                />
+
+
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <WebView
+        android:background="#efefef"
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    </WebView>
+
+    <FrameLayout
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_alignParentBottom="true"
+        android:elevation="5dp"
+        android:id="@+id/bottomItems"
+        android:layout_width="match_parent"
+        android:layout_height="121dp"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+    </FrameLayout>
+</RelativeLayout>

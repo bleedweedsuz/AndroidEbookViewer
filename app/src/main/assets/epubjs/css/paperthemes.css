@@ -1,0 +1,43 @@
+@font-face{
+    font-family: FontRoboto;
+    src: url(../fonts/roboto.ttf);
+}
+
+@font-face{
+    font-family: FontKarla;
+    src: url(../fonts/karla.ttf);
+}
+
+@font-face{
+    font-family: FontLora;
+    src: url(../fonts/lora.ttf);
+}
+
+@font-face{
+    font-family: FontRubik;
+    src: url(../fonts/rubik.ttf);
+}
+
+@font-face{
+    font-family: FontUbuntu;
+    src: url(../fonts/ubuntu.ttf);
+}
+
+@font-face{
+    font-family: FontNunito;
+    src: url(../fonts/nunito.ttf);
+}
+
+@font-face{
+    font-family: FontSansForgetica;
+    src: url(../fonts/sansforgetica.otf);
+}
+
+a:link, a:visited{
+    text-decoration: underline;
+    color: #f99797;
+}
+
+::selection{
+    background: #c5c5c5 !important;
+}

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "373945019436",
+    "firebase_url": "https://projectpaper-468fc.firebaseio.com",
+    "project_id": "projectpaper-468fc",
+    "storage_bucket": "projectpaper-468fc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:373945019436:android:b832b304c299d247",
+        "android_client_info": {
+          "package_name": "zkagazapahtnajusz.paperproject.com.paperproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "373945019436-od1olqi0mbdms9hrvua4i2j6lam9c9it.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyEE7K7l1SqySH8-iCIib2z2aduU_lIXs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

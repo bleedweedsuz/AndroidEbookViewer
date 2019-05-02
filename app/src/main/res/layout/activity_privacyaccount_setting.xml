@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    tools:context=".Activity_PrivacyAccount_Setting">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#fff"
+        android:elevation="3dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp">
+
+        <TextView
+            android:id="@+id/toolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="Account Privacy"
+            android:textColor="#666666"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_below="@id/toolBar"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Show Email "
+                    android:textAppearance="@style/Custom_Font_Roboto"
+                    android:textColor="#444"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/emailSwitch"
+                    android:layout_width="55dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentRight="true"
+                    app:sb_background="#eee"
+                    app:sb_checked="false"
+                    app:sb_checked_color="#000"
+                    app:sb_show_indicator="false" />
+
+            </RelativeLayout>
+            <TextView
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Custom_Font_Roboto"
+                android:text="show email to follower"
+                android:textColor="#777777"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Show Phone No."
+                    android:textAppearance="@style/Custom_Font_Roboto"
+                    android:textColor="#444"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/phoneSwitch"
+                    android:layout_width="55dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentRight="true"
+                    app:sb_background="#eee"
+                    app:sb_checked="false"
+                    app:sb_checked_color="#000"
+                    app:sb_show_indicator="false" />
+
+            </RelativeLayout>
+            <TextView
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Custom_Font_Roboto"
+                android:text="show phone no. to follower"
+                android:textColor="#777777"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Show Gender"
+                    android:textAppearance="@style/Custom_Font_Roboto"
+                    android:textColor="#444"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/genderSwitch"
+                    android:layout_width="55dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentRight="true"
+                    app:sb_background="#eee"
+                    app:sb_checked="false"
+                    app:sb_checked_color="#000"
+                    app:sb_show_indicator="false" />
+
+            </RelativeLayout>
+            <TextView
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Custom_Font_Roboto"
+                android:text="show gender to follower"
+                android:textColor="#777777"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Show Birthday"
+                    android:textAppearance="@style/Custom_Font_Roboto"
+                    android:textColor="#444"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/birthdaySwitch"
+                    android:layout_width="55dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentRight="true"
+                    app:sb_background="#eee"
+                    app:sb_checked="false"
+                    app:sb_checked_color="#000"
+                    app:sb_show_indicator="false" />
+
+            </RelativeLayout>
+            <TextView
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Custom_Font_Roboto"
+                android:text="show birthday to follower"
+                android:textColor="#777777"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Show Bio"
+                    android:textAppearance="@style/Custom_Font_Roboto"
+                    android:textColor="#444"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/bioSwitch"
+                    android:layout_width="55dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentRight="true"
+                    app:sb_background="#eee"
+                    app:sb_checked="false"
+                    app:sb_checked_color="#000"
+                    app:sb_show_indicator="false" />
+
+            </RelativeLayout>
+            <TextView
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Custom_Font_Roboto"
+                android:text="show bio to follower"
+                android:textColor="#777777"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Custom_Font_Roboto"
+                android:text="note* please read about privacy &amp; policy in &quot;privacy &amp; policy&quot; section"
+                android:textColor="#777777"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

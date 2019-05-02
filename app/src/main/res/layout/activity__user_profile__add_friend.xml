@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="zkagazapahtnajusz.paperproject.com.paperproject.Activity_UserProfile_AddFriend">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarUserProfileAddFriend"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#fff"
+        android:elevation="3dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp">
+
+        <android.support.v7.widget.SearchView
+            app:queryHint="Search Friend"
+            android:paddingLeft="-14dp"
+            android:paddingStart="-14dp"
+            android:id="@+id/searchViewUserProfileAddFriend"
+            android:focusedByDefault="true"
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <requestFocus/>
+
+
+        </android.support.v7.widget.SearchView>
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+</RelativeLayout>

@@ -1,0 +1,269 @@
+<resources>
+    <string name="app_name">Paper</string>
+    <string name="static_id">123321</string>
+    <!-- Activity Sign In -->
+    <string name="activitySignIn_Email">EMAIL</string>
+    <string name="activitySignIn_Password">PASSWORD</string>
+    <string name="activitySignIn_Button_SignIn">Sign In</string>
+    <string name="activitySignIn_ForgotPassword">Forgot password?</string>
+    <string name="activitySignIn_DoNotHaveAccount">DON\'T HAVE AN ACCOUNT?</string>
+    <string name="activitySignIn_BottomSignUp">SIGN UP</string>
+
+    <!-- Activity Sign Up -->
+    <string name="activitySignUp_Title">Sign Up</string>
+    <string name="activitySignUp_FullName">FULL NAME</string>
+    <string name="activitySignUp_Email">EMAIL</string>
+    <string name="activitySignUp_Phone">PHONE</string>
+    <string name="activitySignUp_Password">PASSWORD</string>
+    <string name="activitySignUp_ButtonSignUp">Sign Up</string>
+    <string name="activitySignUp_AlreadyHaveAccount">ALREADY HAVE AN ACCOUNT?</string>
+    <string name="activitySignUP_BottomSignIN">SIGN IN</string>
+    <string name="activitySignUP_PasswordGuide">your password must be at least 8 characters, with at least 1 number, 1 upper case character, 1 small character &amp; 1 special character to make it strong (password must be medium to sign up)</string>
+
+    <!--  Fragment Drawer -->
+    <string name="fragmentDrawer_ViewProfile">View Profile &amp; Settings</string>
+    <string name="lorem_sample">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+
+    <!-- Firebase Store Collection Path String -->
+    <string name="FIRESTORE_ROOT_USERDETAILS">userdetails</string>
+    <string name="F_USERDETAILS_UID">uid</string>
+    <string name="F_USERDETAILS_USERFULLNAME">userfullname</string>
+    <string name="F_USERDETAILS_BIO">bio</string>
+    <string name="F_USERDETAILS_GENDER">gender</string>
+    <string name="F_USERDETAILS_PHONE">phone</string>
+    <string name="F_USERDETAILS_PROFILEURL">profileurl</string>
+    <string name="F_USERDETAILS_BACKGROUNDURL">backgroundurl</string>
+    <string name="F_USERDETAILS_BIRTHDAY">birthday</string>
+    <string name="F_USERDETAILS_EMAIl">email</string>
+    <string name="F_USERDETAILS_JOINDATE">joindate</string>
+    <string name="F_USERDETAILS_TOKEN">token</string>
+
+    <!--Firebase Storeage Collection User Follow-->
+    <string name="FIRESTORE_ROOT_FOLLOWER">follower</string>
+    <string name="F_USERDETAILS_FOLLOWER_UID">uid</string>
+    <string name="F_USERDETAILS_FOLLOWER_DATE">date</string>
+    <string name="F_USERDETAILS_FOLLOWER_STATE">state</string>
+
+    <!--Firebase Storeage Collection User Following-->
+    <string name="FIRESTORE_ROOT_FOLLOWING">following</string>
+    <string name="F_USERDETAILS_FOLLOWING_UID">uid</string>
+    <string name="F_USERDETAILS_FOLLOWING_DATE">date</string>
+    <string name="F_USERDETAILS_FOLLOWING_STATE">state</string>
+    <string name="F_USERDETAILS_FOLLOWING_ACHIEVE">achieve</string>
+
+    <!--Firebase Firestore User Library-->
+    <string name="FIRESTORE_ROOT_LIBRARY">library</string>
+    <string name="F_USERDETAILS_LIBRARY_BOOKID">bookid</string>
+    <string name="F_USERDETAILS_LIBRARY_DATE">date</string>
+    <string name="F_USERDETAILS_LIBRARY_STATE">state</string>
+    <string name="F_USERDETAILS_LIBRARY_ORDERDATE">orderdate</string>
+    <string name="F_USERDETAILS_LIBRARY_PRIVACY">privacy</string> <!-- Value: [private, public] -->
+
+
+    <!--Firebase Storage Collection User Posts-->
+    <string name="FIRESTORE_ROOT_POSTS">posts</string>
+    <string name="F_POSTS_POST_UID">uid</string>
+    <string name="F_POSTS_POSTID">postid</string>
+    <string name="F_POSTS_POST_TYPE">posttype</string>
+    <string name="F_POSTS_POST_DATE">postdate</string>
+    <string name="F_POSTS_POST_DESCRIPTION">postdescription</string>
+    <string name="F_POSTS_POST_BOOK_REFRENCE">postbookrefrence</string>
+    <string name="F_POSTS_POST_PRIVACY">postprivacy</string>
+    <string name="F_POSTS_POST_POSTEDITED">postedited</string>
+
+    <!--Firebase Storage Collection User Posts -> Comments -->
+    <string name="FIRESTORE_ROOT_POSTS_COMMENTS">comments</string>
+    <string name="F_POSTS_COMMENTS_COMMENT_ID">id</string>
+    <string name="F_POSTS_COMMENTS_COMMENT_UID">uid</string>
+    <string name="F_POSTS_COMMENTS_COMMENT_DESCRIPTION">description</string>
+    <string name="F_POSTS_COMMENTS_COMMENT_COMMENTDATE">commentdate</string>
+
+    <!--Firebase Storage Collection User Posts -> Comments -->
+    <string name="FIRESTORE_ROOT_BOOKS_COMMENTS">comments</string>
+    <string name="F_BOOKS_COMMENTS_COMMENT_ID">id</string>
+    <string name="F_BOOKS_COMMENTS_COMMENT_UID">uid</string>
+    <string name="F_BOOKS_COMMENTS_COMMENT_DESCRIPTION">description</string>
+    <string name="F_BOOKS_COMMENTS_COMMENT_COMMENTDATE">commentdate</string>
+
+
+    <!--Firebase Storage Collection User Posts -> Likes -->
+    <string name="FIRESTORE_ROOT_POSTS_LIKES">likes</string>
+    <string name="F_POSTS_COMMENTS_LIKES_ID">id</string>
+    <string name="F_POSTS_COMMENTS_LIKES_UID">uid</string>
+    <string name="F_POSTS_COMMENTS_LIKES_DATE">likedate</string>
+
+    <!--Firebase Storage Collection User Posts -> Notifications -->
+    <string name="FIRESTORE_ROOT_NOTIFICATIONS">notifications</string>
+    <string name="F_NOTIFICATIONS_PTYPE">ptype</string>
+    <string name="F_NOTIFICATIONS_POSTDATE">postdate</string>
+    <string name="F_NOTIFICATIONS_POSTID">postid</string>
+    <string name="F_NOTIFICATIONS_UID">uid</string>
+    <string name="F_NOTIFICATIONS_READ">read</string>
+    <string name="F_NOTIFICATIONS_DESCRIPTION">description</string>
+    <string name="F_NOTIFICATIONS_BOOKID">bookid</string>
+
+    <!--Firebase Storage Collection Books-->
+    <string name="FIRESTORE_ROOT_BOOKS">books</string>
+    <string name="F_BOOKS_BOOKID">bookid</string>
+    <string name="F_BOOKS_TITLE">title</string>
+    <string name="F_BOOKS_DESCRIPTION">description</string>
+    <string name="F_BOOKS_AUTHOR">author</string>
+    <string name="F_BOOKS_GENRE">genre</string>
+    <string name="F_BOOKS_SUFFIX">suffix</string>
+    <string name="F_BOOKS_PRICE">price</string>
+    <string name="F_BOOKS_CURRENCYSTR">currencystr</string>
+    <string name="F_BOOKS_DATE">date</string>
+    <string name="F_BOOKS_BOOKFLAG">bookflag</string>
+    <string name="F_BOOKS_FILETYPE">filetype</string>
+    <string name="F_BOOKS_IMAGEURL">imageurl</string>
+    <string name="F_BOOKS_IMAGEURLBACK">backimageurl</string>
+    <string name="F_BOOKS_STATUS">status</string>
+    <string name="F_BOOKS_COUNTERDOWNLOAD">counterdownload</string>
+    <string name="F_BOOKS_COUNTERLIKE">counterlike</string>
+    <string name="F_BOOKS_COUNTERVIEW">counterview</string>
+    <string name="F_BOOKS_COUNTERCOMMENT">countercomment</string>
+    <string name="F_BOOKS_PUBLICKEY">publickey</string>
+    <string name="F_BOOKS_COUNTRY">country</string>
+    <string name="F_BOOKS_LANGUAGE">language</string>
+    <string name="F_BOOKS_PUBLISHER">publisher</string>
+    <string name="F_BOOKS_PUBLICATIONDATE">publicationdate</string>
+    <string name="F_BOOKS_PRECEDEDBY">precededby</string>
+    <string name="F_BOOKS_FOLLOWEDBY">followedby</string>
+
+    <string name="FIRESTORE_ROOT_GENRELIST">genre</string>
+
+    <!--Firebase Storage Collection Books Views-->
+    <string name="FIRESTORE_ROOT_BOOKS_VIEWS">views</string>
+    <string name="F_VIEWS_UID">uid</string>
+
+    <!--Firebase Storage Collection Books Likes-->
+    <string name="FIRESTORE_ROOT_BOOKS_LIKES">likes</string>
+    <string name="F_BOOKS_LIKES_UID">uid</string>
+
+    <!--Firebase Storage Collection Books Follow-->
+    <string name="FIRESTORE_ROOT_BOOKS_FOLLOWER">follower</string>
+    <string name="F_BOOKS_FOLLOWER_UID">uid</string>
+    <string name="F_BOOKS_FOLLOWER_DATE">date</string>
+
+    <!--Furebase Storage Collection BookSuffix-->
+    <string name="FIRESTORE_ROOT_BOOKSUFFIX">booksuffix</string>
+    <string name="F_BOOKSUFFIX_ID">ID</string>
+
+    <!--FireStore Storage -->
+    <string name="FIRESTORAGE_LOCAL_DRIVE_BOOK">books</string>
+
+    <!--Firebase Storage Path String -->
+    <string name="FIRESTORAGE_ROOT_USERIMAGES">userimages</string>
+    <string name="FIRESTORAGE_ROOT_PROFILE_SUFFIX">p_</string>
+    <string name="FIRESTORAGE_ROOT_PROFILE_BACKGROUND_SUFFIX">pb_</string>
+
+    <!--Firebase Reports -->
+    <string name="FIRESTORAGE_ROOT_REPORTS">reports</string>
+    <string name="F_REPORTS_DATE">date</string>
+    <string name="F_REPORTS_DESCRIPTION">description</string>
+    <string name="F_REPORTS_STATUS">status</string>
+    <string name="F_REPORTS_TITLE">title</string>
+    <string name="F_REPORTS_USERID">userid</string>
+
+    <!--FireStore Upload Percentage-->
+    <integer name="FIRESTORAGE_UPLOAD_QUALITY_IMAGE">60</integer>
+
+    <!--Shared Preference -->
+    <string name="SHARED_KEY">SKey_1_4</string>
+    <string name="SHARED_P_PROFILE_PICTURE">ProfilePicture_</string><!--Profile Picture -->
+    <string name="SHARED_P_PROFILE_PICTURE_BUFFER_LINK">ProfilePictureBufferLink</string>
+
+    <string name="SHARED_P_BACKGROUND_PICTURE">BackgroundPicture</string><!--Background Picture -->
+    <string name="SHARED_P_BACKGROUND_PICTURE_BUFFER_LINK">BackgroundPictureBufferLink</string>
+
+    <!--Cloud Functions-->
+    <string name="FUNCTION_GETBOOKSUFFIXONLY">GetBookSuffixOnly</string>
+
+    <!--Facebook-->
+    <string name="facebook_app_id">355825018548693</string>
+    <string name="fb_login_protocol_scheme">fb355825018548693</string>
+
+    <!--Library Setting-->
+    <string name="LibrarySetting_ShowLocalDrive">showlocaldrive</string>
+    <string name="LibrarySetting_ShowLocalDrive_Document">_document</string>
+    <string name="LibrarySetting_ShowLocalDrive_Download">_download</string>
+    <string name="LibrarySetting_FilterFileExtension_DOC">_doc</string>
+    <string name="LibrarySetting_FilterFileExtension_XLS">_xls</string>
+    <string name="LibrarySetting_FilterFileExtension_PPT">_ppt</string>
+    <string name="LibrarySetting_FilterFileExtension_PDF">_pdf</string>
+    <string name="LibrarySetting_FilterFileExtension_TXT">_txt</string>
+
+    <!--Store Setting-->
+    <string name="StoreSetting_SortMode">sortmode</string>
+
+    <!--Wifi Only Setting-->
+    <string name="UseWifiOnlySetting">wifionlysetting</string>
+
+    <!--App Updates Setting-->
+    <string name="AppUpdatesSetting">appupdatessetting</string>
+
+    <!--Notification Tag-->
+    <string name="NotificationSetting">notificationsetting</string>
+    <string name="Notification_postnew">notificationpostnew</string>
+    <string name="Notification_postcomment">notificationpostcomment</string>
+    <string name="Notification_postlike">notificationpostlike</string>
+    <string name="Notification_bookcomment">notificationbookcomment</string>
+    <string name="Notification_booklike">notificationbooklike</string>
+    <string name="Notification_followrequest">notificationfollowrequest</string>
+    <string name="Notification_request_replied">notificationrequestreplied</string>
+
+    <!--Account Privacy-->
+    <string name="AccountPrivacySetting">accountprivacysetting</string>
+    <string name="AccountPrivacy_Email">accountprivacyemail</string>
+    <string name="AccountPrivacy_Phone">accountprivacyphone</string>
+    <string name="AccountPrivacy_Gender">accountprivacygender</string>
+    <string name="AccountPrivacy_Birthday">accountprivacybirthday</string>
+    <string name="AccountPrivacy_Bio">accountprivacybio</string>
+
+    <!--PDF SETTINGS ITEMS-->
+    <string-array name="PDF_orientation">
+        <item>Horizontal</item>
+        <item>Vertical</item>
+    </string-array>
+    <string-array name="PDF_fitpolicy">
+        <item>Width</item>
+        <item>Height</item>
+        <item>Both</item>
+    </string-array>
+
+    <!--PDF SETTINGS-->
+    <string name="PDF_SETTING_ANTIALIASING">pdf_setting_antialiasing</string>
+    <string name="PDF_SETTING_DOUBLETAP">pdf_setting_doubletap</string>
+    <string name="PDF_SETTING_AUTOSPACING">pdf_setting_autospacing</string>
+    <string name="PDF_SETTING_SCROLLABLE">pdf_setting_scrollable</string>
+    <string name="PDF_SETTING_ORIENTATION">pdf_setting_orientation</string>
+    <string name="PDF_SETTING_PAGEFITPOLICY">pdf_setting_pagefitpolicy</string>
+
+    <!--EPUB SETTINGS ITEMS-->
+    <string-array name="EPUB_orientation">
+        <item>Horizontal</item>
+        <item>Vertical</item>
+    </string-array>
+
+    <!--EPUB SETTINGS-->
+    <string name="EPUB_SETTING_VOLUMEKEYS">epub_setting_volumekeys</string>
+    <string name="EPUB_SETTING_PAGECURLANIMATION">epub_setting_pagecurlanimation</string>
+    <string name="EPUB_SETTING_SWIPEORIENTATION">epub_setting_swipeorientation</string>
+    <string name="EPUB_SETTING_NOTECOLOR">epub_setting_notecolor</string>
+    <string name="EPUB_SETTING_HIGHLIGHTCOLOR">epub_setting_highlightcolor</string>
+
+    <!--EPUB ENGINE-->
+    <string name="EPUB_ENGINE_ROOT">file:///android_asset/epubjs/epub.html</string>
+
+    <!--SQlITE DATABASE-->
+    <string name="SQLITE_DATABASE">papersqlitedatabase</string>
+    <integer name="SQLITE_DATABSE_VERSION">4</integer>
+
+    <!--HTML PAGES-->
+    <string name="HTML_PAGES_PRIVACY_POLICY">file:///android_asset/htmlpages/Privacy_Policy_1.0.html</string>
+    <string name="HTML_PAGES_TERMS_CONDITIONS">file:///android_asset/htmlpages/Terms_Conditions_1.0.html</string>
+
+    <!--About Paper-->
+    <string name="aboutapptitle">A Reader for You &amp; Me.</string>
+    <string name="aboutapp">A reader designed for our love of reading, to be more expressive and to keep in touch with people like us.</string>
+</resources>

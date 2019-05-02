@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="#ffffff"
+    tools:context=".Activity_SignIn">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6.6"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:weightSum="10">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="9">
+        </RelativeLayout>
+        <ImageView
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/imageLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/paper_signin_logo" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3.4"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:weightSum="10">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="6.4"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp">
+            <TextView
+                android:id="@+id/emailText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:textAppearance="@style/Custom_Font_Roboto"
+                android:text="@string/activitySignIn_Email"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editSignInEmailPhone"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:background="@drawable/edittext_selector"
+                android:hint="abc@xyz.com"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:paddingTop="3dp"
+                android:textAppearance="@style/Custom_Font_Roboto"
+                android:textColor="#222222"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/passwordText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="10dp"
+                android:textAppearance="@style/Custom_Font_Roboto"
+                android:text="@string/activitySignIn_Password"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:hint="enter your password"
+                    android:paddingRight="44dp"
+                    android:id="@+id/editSignInPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="@drawable/edittext_selector"
+                    android:inputType="textPassword"
+                    android:paddingTop="3dp"
+                    android:textAppearance="@style/Custom_Font_Roboto"
+                    android:textColor="#222222"
+                    android:textSize="15sp"
+                    android:imeOptions="actionDone"/>
+
+                <ImageView
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:id="@+id/editShowHidePassword"
+                    android:padding="7.5dp"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/icon_visibility_off"
+                    app:layout_constraintBottom_toBottomOf="@+id/editSignInPassword"
+                    app:layout_constraintEnd_toEndOf="@+id/editSignInPassword"
+                    app:layout_constraintTop_toTopOf="@+id/editSignInPassword" />
+            </android.support.constraint.ConstraintLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3.6"
+            android:weightSum="10"
+            android:orientation="vertical">
+            <LinearLayout
+                android:weightSum="10"
+                android:layout_marginRight="35dp"
+                android:gravity="center"
+                android:layout_weight="6.4"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                android:layout_marginLeft="35dp">
+                <RelativeLayout
+                    android:layout_weight="4"
+                    android:onClick="OnSignInWithEmailAndPhone_Click"
+                    android:id="@+id/buttonSignInClick"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/card_button_signin">
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@id/imageIcon"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:orientation="horizontal"
+                            android:layout_toRightOf="@id/imageIcon">
+
+                            <TextView
+                                android:id="@+id/signintext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/activitySignIn_Button_SignIn"
+                                android:textAppearance="@style/Custom_Font_Apperance_OuterContent_H1"
+                                android:textColor="#000"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6">
+                    <TextView
+                        android:onClick="ForgotPassword_onClick"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:textAppearance="@style/Custom_Font_Roboto"
+                        android:text="@string/activitySignIn_ForgotPassword"
+                        android:textColor="#bbb"
+                        android:textSize="12.5sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3.6"
+                android:background="#fff"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:paddingLeft="35dp"
+                    android:paddingRight="35dp"
+                    android:weightSum="6"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_weight="8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:background="#bbb"
+                        android:layout_weight="1.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp">
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_weight="2.65"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="0dp"
+                            android:gravity="center"
+                            android:text="OR "
+                            android:textAppearance="@style/Custom_Font_Apperance_OuterContent_H3"
+                            android:textColor="#444"
+                            android:textSize="15sp" />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:background="#bbb"
+                        android:layout_weight="1.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp">
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:weightSum="10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="2"
+                    android:gravity="center">
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_weight="4.2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:onClick="OnFacebookSignIn_Click"
+                            app:rippleColor="@color/colorRipple"
+                            android:clickable="true"
+                            android:scaleType="centerInside"
+                            app:borderWidth="1dp"
+                            app:elevation="4dp"
+                            android:layout_marginEnd="14dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="16dp"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/icon_fb"
+                            android:tint="@color/com_facebook_blue"
+                            app:backgroundTint="#ffffff"  />
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:onClick="OnGoogleSignIn_Click"
+                            app:rippleColor="@color/colorRipple"
+                            android:clickable="true"
+                            android:scaleType="centerInside"
+                            app:borderWidth="1dp"
+                            app:elevation="4dp"
+                            android:layout_marginEnd="14dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="16dp"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/icon_google_main"
+                            app:backgroundTint="#ffffff" />
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:onClick="OnPhone_Click"
+                            app:rippleColor="@color/colorRipple"
+                            android:clickable="true"
+                            android:scaleType="centerInside"
+                            app:borderWidth="1dp"
+                            app:elevation="4dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="16dp"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/icon_phone"
+                            android:tint="#2d9448"
+                            app:backgroundTint="#ffffff" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="7.0"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:paddingLeft="18dp"
+                            android:gravity="center"
+                            android:onClick="OnSignUpPage_Click"
+                            android:textColor="#bbbbc6"
+                            android:textSize="12sp"
+                            android:id="@+id/textViewSignUpPage1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="34dp"
+                            android:textAppearance="@style/Custom_Font_Roboto"
+                            android:text="@string/activitySignIn_DoNotHaveAccount" />
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:id="@+id/textViewSignUpPage2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="34dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="4dp"
+                            android:gravity="center"
+                            android:onClick="OnSignUpPage_Click"
+                            android:paddingRight="18dp"
+                            android:text="@string/activitySignIn_BottomSignUp"
+                            android:textAlignment="center"
+                            android:textAppearance="@style/Custom_Font_Roboto"
+                            android:textColor="#111"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="4dp">
+
+    <LinearLayout
+        android:id="@+id/linearTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_weight="6.75"
+            android:paddingLeft="11dp"
+            android:paddingRight="12dp">
+
+            <ImageView
+                android:id="@+id/recyclerItemImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_weight="3.3"
+            android:background="#fff">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relativeLayout"
+                android:paddingRight="12dp">
+
+                <TextView
+                    android:id="@+id/recyclerItemName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textAppearance="@style/Custom_Font_Roboto"
+                    android:textColor="#333"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_marginTop="4dp"
+                android:id="@+id/authorlayout"
+                android:layout_below="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="12dp">
+                <TextView
+                    android:textSize="12sp"
+                    android:id="@+id/author"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/authorlayout"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:id="@+id/linearLayout">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+
+                    app:srcCompat="@drawable/views" />
+
+                <TextView
+                    android:id="@+id/recyclerItemViews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text="0"
+                    android:textAppearance="@style/Custom_Font_Apperance_OuterContent_H2"
+                    android:textSize="9.5sp" />
+
+                <ImageView
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:srcCompat="@drawable/library_icon" />
+                <TextView
+                    android:id="@+id/recyclerItemDownload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text="0"
+                    android:textAppearance="@style/Custom_Font_Apperance_OuterContent_H2"
+                    android:textSize="9.5sp" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="8dp"
+                    app:srcCompat="@drawable/icon_new_like" />
+
+                <TextView
+                    android:id="@+id/recyclerItemLikes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text="0"
+                    android:textAppearance="@style/Custom_Font_Apperance_OuterContent_H2"
+                    android:textSize="9.5sp" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="8dp"
+                    app:srcCompat="@drawable/comment" />
+
+                <TextView
+                    android:id="@+id/recyclerItemComments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text="0"
+                    android:textAppearance="@style/Custom_Font_Apperance_OuterContent_H2"
+                    android:textSize="9.5sp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout"
+                android:layout_centerHorizontal="true"
+                android:paddingRight="12dp"
+                android:id="@+id/relativeLayout2">
+
+                <TextView
+                    android:ellipsize="end"
+                    android:maxLines="4"
+                    android:id="@+id/recyclerItemDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:textAppearance="@style/Custom_Font_Apperance_OuterContent_H4"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:background="#ddd"
+        android:layout_below="@id/linearTop"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

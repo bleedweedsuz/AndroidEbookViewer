@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<zkagazapahtnajusz.paperproject.com.paperproject.Utilities.NestedScrollView android:layout_width="match_parent"
+    android:id="@+id/nestedScrollView"
+    android:fillViewport="true"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#fff"
+    xmlns:card_view="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/topSpace"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_below="@+id/topSpace"
+            android:id="@+id/linearFragmentLibraryContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <TextView
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:freezesText="true"
+                android:textAlignment="center"
+                android:id="@+id/textFragmentLibraryTitle"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="1"
+                android:singleLine="true"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textAppearance="@style/Custom_Font_Roboto"
+                android:textSize="20sp" />
+            <TextView
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:freezesText="true"
+
+                android:textColor="#acabab"
+                android:textAlignment="center"
+                android:id="@+id/textFragmentLibraryAuthorName"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="1"
+                android:singleLine="true"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textAppearance="@style/Custom_Font_Roboto"
+                android:textSize="15sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical|center"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="33dp">
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        app:srcCompat="@drawable/views" />
+
+                    <TextView
+                        android:id="@+id/textFragmentLibraryViews"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:text="0"
+                        android:textAppearance="@style/Custom_Font_Roboto"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginStart="12dp"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="33dp">
+                    <ImageView
+                        android:padding="1dp"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        app:srcCompat="@drawable/library_icon" />
+
+                    <TextView
+                        android:id="@+id/textFragmentLibraryDownload"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:text="0"
+                        android:textAppearance="@style/Custom_Font_Roboto"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:onClick="buttonLike_onClick"
+                    android:id="@+id/buttonLike"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:layout_marginStart="12dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="33dp">
+                    <ImageView
+                        android:id="@+id/iconLike"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        app:srcCompat="@drawable/icon_new_like_dim" />
+
+                    <TextView
+                        android:id="@+id/textFragmentLibraryLikes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:text="0"
+                        android:textAppearance="@style/Custom_Font_Roboto"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:onClick="buttonComment_onClick"
+                    android:id="@+id/buttonComment"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginStart="12dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="33dp">
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        app:srcCompat="@drawable/comment" />
+
+                    <TextView
+                        android:id="@+id/textComments"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:text="0"
+                        android:textAppearance="@style/Custom_Font_Roboto"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:onClick="buttonFollower_onClick"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="12dp"
+                    android:id="@+id/buttonInsideBookFollow"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="33dp"
+                    android:layout_marginLeft="12dp">
+
+
+                    <ImageView
+                        android:id="@+id/imageIconFollow"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/icon_follow" />
+
+                    <TextView
+                        android:layout_marginRight="3dp"
+                        android:layout_marginLeft="3dp"
+                        android:id="@+id/textInsideBookFollow"
+                        android:textSize="14sp"
+                        android:textAppearance="@style/Custom_Font_Roboto"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Follow"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:onClick="buttonView_onClick"
+                    android:id="@+id/buttonRead"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/card_button_reader"
+                        android:minWidth="100dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="22dp"
+                        android:paddingRight="22dp">
+
+                        <ImageView
+                            android:visibility="gone"
+                            android:layout_marginRight="10dp"
+                            android:id="@+id/imageIcon"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            app:srcCompat="@drawable/views"
+                            android:layout_alignParentLeft="true" />
+
+                        <LinearLayout
+                            android:minWidth="80dp"
+                            android:gravity="center"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@id/imageIcon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_toRightOf="@id/imageIcon">
+                            <TextView
+                                android:id="@+id/textPurchaseFree"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="@style/Custom_Font_Roboto"
+                                android:textColor="#000"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:id="@+id/textFragmentLibraryPrice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="@style/Custom_Font_Roboto"
+                                android:textColor="#353535"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textFragmentLibraryDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_light"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/Custom_Font_Apperance_OuterContent_H3"
+                android:textSize="@dimen/H4_Outside_Content"
+                android:gravity="start" />
+
+            <RelativeLayout
+                android:layout_below="@id/textInsideFragmentsimilarStoriesText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tagInsideFragmentsHolder"
+                android:padding="20dp">
+
+                <me.gujun.android.taggroup.TagGroup
+                    app:atg_verticalPadding="4dp"
+                    app:atg_horizontalPadding="10dp"
+                    app:atg_textColor="#000"
+                    app:atg_borderColor="#000"
+                    android:id="@+id/tag_group"
+                    style="@style/TagGroup" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ccc">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:descendantFocusability="blocksDescendants"
+                android:background="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textInsideFragmentsimilarStoriesText"
+                    android:layout_marginBottom="22dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/H2_Outside_Content"
+                    android:text="Similar Genre"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#444"
+                    android:textAppearance="@style/Custom_Font_Apperance_OuterContent_H2"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:focusableInTouchMode="true"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:id="@+id/recyclerViewInsideFragmentHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textInsideFragmentsimilarStoriesText">
+                </android.support.v7.widget.RecyclerView>
+
+                <LinearLayout
+                    android:layout_marginTop="60dp"
+                    android:background="#fff"
+                    android:visibility="invisible"
+                    android:id="@+id/NoDataFoundView"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="104dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="104dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="56dp"
+                            android:layout_height="56dp"
+                            android:layout_marginLeft="8dp"
+                            android:src="@drawable/exclamation_icon" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="16dp"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="No Data Found"
+                                android:textAppearance="@style/Custom_Font_Roboto"
+                                android:textColor="#333"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:text="no similar stories found in database"
+                                android:id="@+id/titleDataNotFound"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="30dp"
+                                android:layout_marginTop="2dp"
+                                android:textAppearance="@style/Custom_Font_Apperance_OuterContent_H4"
+                                android:textColor="#555"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+       </LinearLayout>
+    </RelativeLayout>
+</zkagazapahtnajusz.paperproject.com.paperproject.Utilities.NestedScrollView>

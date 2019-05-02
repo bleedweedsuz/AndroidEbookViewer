@@ -1,0 +1,98 @@
+<RelativeLayout
+    android:background="#ffffff"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="zkagazapahtnajusz.paperproject.com.paperproject.ReaderEngine.Reader_TXT">
+
+    <zkagazapahtnajusz.paperproject.com.paperproject.Model.CustomScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:padding="5dp"
+            android:gravity="top"
+            android:id="@+id/txtview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </zkagazapahtnajusz.paperproject.com.paperproject.Model.CustomScrollView>
+
+    <android.support.v7.widget.Toolbar
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        android:id="@+id/toolBar"
+        android:background="#fff"
+        android:layout_alignParentTop="true"
+        android:elevation="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:elevation="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:gravity="right|center">
+                <TextView
+                    android:layout_marginRight="5dp"
+                    android:textColor="#333"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="16sp"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="1"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:id="@+id/toolbarTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:onClick="reloadTxt"
+                    android:id="@+id/reloadPDF"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_alignParentRight="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:padding="10dp"
+                        android:src="@drawable/icon_reload"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:onClick="gotoTop_onClick"
+        android:visibility="invisible"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:id="@+id/gotoTop"
+        android:padding="2dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/goto_top"/>
+</RelativeLayout>

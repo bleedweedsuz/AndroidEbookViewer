@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="H1_Outside_Content">24sp</dimen>
+    <dimen name="H2_Outside_Content">19sp</dimen>
+    <dimen name="H3_Outside_Content">16sp</dimen>
+    <dimen name="H4_Outside_Content">15sp</dimen>
+    <dimen name="H5_Outside_Content">13sp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fastscroller_handle_corner">20dp</dimen>
+    <dimen name="fastscroller_handle_size">50dp</dimen>
+    <dimen name="fastscroller_reack_corner">3dp</dimen>
+    <dimen name="fastscroller_track_height">30dp</dimen>
+    <dimen name="fastscroller_track_width">6dp</dimen>
+    <dimen name="fastscroller_track_padding">2dp</dimen>
+</resources>

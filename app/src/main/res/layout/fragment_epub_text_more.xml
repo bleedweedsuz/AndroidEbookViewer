@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activity_PushNotifications">
+
+    <ScrollView
+        android:layout_below="@id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:padding="5dp"
+                    android:text="Font Family"
+                    android:textSize="18sp" />
+
+               <LinearLayout
+                   android:orientation="vertical"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   
+                   <LinearLayout
+                       android:layout_margin="4dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="75dp">
+
+                       <TextView
+                           android:id="@+id/FF_Roboto"
+                           android:layout_width="0dp"
+                           android:layout_height="75dp"
+                           android:layout_gravity="fill_horizontal"
+                           android:layout_margin="4dp"
+                           android:layout_weight="1"
+                           android:background="@drawable/card_button_reader"
+                           android:clickable="true"
+                           android:focusable="true"
+                           android:fontFamily="@font/roboto"
+                           android:foreground="?android:attr/selectableItemBackground"
+                           android:gravity="center"
+                           android:text="Roboto"
+                           android:textSize="14sp" />
+
+                       <TextView
+                           android:id="@+id/FF_karla"
+                           android:layout_width="0dp"
+                           android:layout_height="75dp"
+                           android:layout_gravity="fill_horizontal"
+                           android:layout_margin="4dp"
+                           android:layout_weight="1"
+                           android:background="@drawable/card_button_reader"
+                           android:clickable="true"
+                           android:focusable="true"
+                           android:fontFamily="@font/sansforgetica_reg"
+                           android:foreground="?android:attr/selectableItemBackground"
+                           android:gravity="center"
+                           android:text="Sans Forgetica"
+                           android:textSize="14sp" />
+
+                       <TextView
+                           android:id="@+id/FF_Lora"
+                           android:layout_width="0dp"
+                           android:layout_height="75dp"
+                           android:layout_gravity="fill_horizontal"
+                           android:layout_margin="4dp"
+                           android:layout_weight="1"
+                           android:background="@drawable/card_button_reader"
+                           android:clickable="true"
+                           android:focusable="true"
+                           android:fontFamily="@font/lora"
+                           android:foreground="?android:attr/selectableItemBackground"
+                           android:gravity="center"
+                           android:text="Lora"
+                           android:textSize="14sp" />
+
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_margin="4dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="75dp">
+
+                       <TextView
+                           android:id="@+id/FF_Rubik"
+                           android:layout_width="0dp"
+                           android:layout_height="75dp"
+                           android:layout_gravity="fill_horizontal"
+                           android:layout_margin="4dp"
+                           android:layout_weight="1"
+                           android:background="@drawable/card_button_reader"
+                           android:clickable="true"
+                           android:focusable="true"
+                           android:fontFamily="@font/rubik"
+                           android:foreground="?android:attr/selectableItemBackground"
+                           android:gravity="center"
+                           android:text="Rubik"
+                           android:textSize="14sp" />
+
+                       <TextView
+                           android:id="@+id/FF_Ubuntu"
+                           android:layout_width="0dp"
+                           android:layout_height="75dp"
+                           android:layout_gravity="fill_horizontal"
+                           android:layout_margin="4dp"
+                           android:layout_weight="1"
+                           android:background="@drawable/card_button_reader"
+                           android:clickable="true"
+                           android:focusable="true"
+                           android:fontFamily="@font/ubuntu"
+                           android:foreground="?android:attr/selectableItemBackground"
+                           android:gravity="center"
+                           android:text="Ubuntu"
+                           android:textSize="14sp" />
+
+                       <TextView
+                           android:id="@+id/FF_Nunito"
+                           android:layout_width="0dp"
+                           android:layout_height="75dp"
+                           android:layout_gravity="fill_horizontal"
+                           android:layout_margin="4dp"
+                           android:layout_weight="1"
+                           android:background="@drawable/card_button_reader"
+                           android:clickable="true"
+                           android:focusable="true"
+                           android:fontFamily="@font/nunito"
+                           android:foreground="?android:attr/selectableItemBackground"
+                           android:gravity="center"
+                           android:text="Nunito"
+                           android:textSize="14sp" />
+
+                   </LinearLayout>
+                   
+               </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:padding="5dp"
+                    android:text="Margin"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_margin="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp">
+
+                        <TextView
+                            android:id="@+id/M_Normal"
+                            android:layout_width="0dp"
+                            android:layout_height="75dp"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/card_button_reader"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:fontFamily="@font/roboto"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:gravity="center"
+                            android:text="Normal"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/M_Wide"
+                            android:layout_width="0dp"
+                            android:layout_height="75dp"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/card_button_reader"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:fontFamily="@font/roboto"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:gravity="center"
+                            android:text="Wide"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/M_Narrow"
+                            android:layout_width="0dp"
+                            android:layout_height="75dp"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/card_button_reader"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:fontFamily="@font/roboto"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:gravity="center"
+                            android:text="Narrow"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

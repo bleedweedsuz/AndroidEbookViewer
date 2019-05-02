@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="zkagazapahtnajusz.paperproject.com.paperproject.Activity_UserProfile_Setting">
+
+    <android.support.v7.widget.Toolbar
+        android:background="#fff"
+        android:elevation="3dp"
+        android:id="@+id/toolbarUserProfileSetting"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp">
+
+        <LinearLayout
+            android:elevation="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left|center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Custom_Font_Apperance_OuterContent_H2"
+                android:text="Account Settings"
+                android:textColor="#000"
+                android:textSize="19sp"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <zkagazapahtnajusz.paperproject.com.paperproject.Utilities.NestedScrollView
+        android:layout_below="@id/toolbarUserProfileSetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_below="@+id/toolbarUserProfileSetting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="16dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp">
+
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:id="@+id/textTop"
+                android:textSize="16sp"
+                android:textAppearance="@style/Custom_Font_Apperance_OuterContent_H2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"/>
+
+            <LinearLayout
+                android:onClick="onUserProfileSettingClick"
+                android:clickable="true"
+                android:elevation="5dp"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:id="@+id/buttonProfilePictureChange"
+                android:layout_marginTop="3dp"
+                android:layout_below="@id/textTop"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center|left">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/accountProfile"
+                    android:layout_marginLeft="4dp"
+                    android:src="@color/colorImageBlank"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" />
+
+                <LinearLayout
+                    android:layout_width="170dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center|left"
+                    android:paddingLeft="15dp">
+
+                    <TextView
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:layout_width="wrap_content"
+                        android:text="Profile Picture"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textSize="14sp"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tap to change"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/spaceTop"
+                android:layout_below="@+id/buttonProfilePictureChange"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ddd">
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:onClick="onUserProfileSettingClick"
+                android:clickable="true"
+                android:elevation="5dp"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:id="@+id/buttonProfileBackgroundPictureChange"
+                android:layout_marginTop="3dp"
+                android:layout_below="@id/spaceTop"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center|left">
+
+                <ImageView
+                    android:id="@+id/accountProfileBackground"
+                    android:layout_marginLeft="4dp"
+                    android:src="@color/colorImageBlank"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="centerCrop"/>
+
+                <LinearLayout
+                    android:layout_width="170dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center|left"
+                    android:paddingLeft="15dp">
+
+                    <TextView
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:layout_width="wrap_content"
+                        android:text="Background Picture"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textSize="14sp"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tap to change"/>
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/spaceTop2"
+                android:layout_below="@+id/buttonProfileBackgroundPictureChange"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ddd">
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/spaceTop2"
+                android:layout_marginLeft="8dp"
+                android:id="@+id/textSecond"
+                android:textSize="16sp"
+                android:textAppearance="@style/Custom_Font_Apperance_OuterContent_H2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About"/>
+
+            <LinearLayout
+                android:onClick="UpdateFullName_Click"
+                android:id="@+id/fullName"
+                android:layout_below="@id/textSecond"
+                android:clickable="true"
+                android:elevation="5dp"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center|left">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center|left"
+                    android:paddingLeft="15dp">
+
+                    <TextView
+                        android:textColor="#000"
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:text="Full Name"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/FullName"
+                        android:textSize="12sp"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Set Full Name"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+
+                android:layout_below="@+id/fullName"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ddd">
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:onClick="UpdateEmail_Click"
+                android:id="@+id/email"
+                android:layout_below="@id/fullName"
+                android:clickable="true"
+                android:elevation="5dp"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center|left">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center|left"
+                    android:paddingLeft="15dp">
+
+                    <TextView
+                        android:id="@+id/EmailProvider"
+                        android:textColor="#000"
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:text="Email"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/Email"
+                        android:textSize="12sp"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Set Email"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_below="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ddd">
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:onClick="UpdatePhoneNo_Click"
+                android:id="@+id/phone"
+                android:layout_below="@id/email"
+                android:clickable="true"
+                android:elevation="5dp"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center|left">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center|left"
+                    android:paddingLeft="15dp">
+
+                    <TextView
+                        android:textColor="#000"
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:text="Phone Number"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/PhoneNo"
+                        android:textSize="12sp"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Set Phone No."/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_below="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ddd">
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:onClick="UpdateGender_Click"
+                android:id="@+id/gender"
+                android:layout_below="@id/phone"
+                android:clickable="true"
+                android:elevation="5dp"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center|left">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center|left"
+                    android:paddingLeft="15dp">
+
+                    <TextView
+                        android:textColor="#000"
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:text="Gender"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/Gender"
+                        android:textSize="12sp"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Set Gender"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_below="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ddd">
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:onClick="UpdateBirthday_Click"
+                android:id="@+id/birthDayBtn"
+                android:layout_below="@id/gender"
+                android:clickable="true"
+                android:elevation="5dp"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center|left">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center|left"
+                    android:paddingLeft="15dp">
+
+                    <TextView
+                        android:textColor="#000"
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:text="Birthday"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/Birthday"
+                        android:textSize="12sp"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Set your birthday"/>
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_below="@+id/birthDayBtn"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ddd">
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:onClick="UpdatePassword_Click"
+                android:id="@+id/password"
+                android:layout_below="@id/birthDayBtn"
+                android:clickable="true"
+                android:elevation="5dp"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center|left">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center|left"
+                    android:paddingLeft="15dp">
+
+                    <TextView
+                        android:textColor="#000"
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:text="Password"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textSize="12sp"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Set a password"/>
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_below="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ddd">
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:onClick="UpdateBio_Click"
+                android:id="@+id/biobtn"
+                android:layout_below="@id/password"
+                android:clickable="true"
+                android:elevation="5dp"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center|left">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center|left"
+                    android:paddingLeft="15dp">
+
+                    <TextView
+                        android:textColor="#000"
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:text="Bio"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textSize="12sp"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Set your bio"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_below="@+id/biobtn"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ddd">
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="30dp"
+                android:id="@+id/providerbox"
+                android:layout_below="@id/biobtn"
+                android:clickable="true"
+                android:elevation="5dp"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center|left">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="start"
+                    android:paddingLeft="15dp">
+                    <TextView
+                        android:textColor="#000"
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:text="Provider"
+                        android:layout_height="wrap_content" />
+                    <android.support.v7.widget.CardView
+                        app:cardCornerRadius="20dp"
+                        android:scaleType="centerInside"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_gravity="start"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp">
+                        <ImageView
+                            android:id="@+id/providerIcon"
+                            android:scaleType="centerInside"
+                            android:padding="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </zkagazapahtnajusz.paperproject.com.paperproject.Utilities.NestedScrollView>
+</RelativeLayout>

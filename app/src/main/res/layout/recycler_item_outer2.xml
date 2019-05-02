@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:paddingLeft="15dp"
+            android:paddingRight="16dp"
+            android:id="@+id/relativeTop"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_centerVertical="true"
+                android:textColor="#444"
+                android:id="@+id/recyclerOuter_TagTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Custom_Font_Apperance_OuterContent_H1"
+                android:text="Action"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="#888"
+                android:id="@+id/recyclerOuter_TagMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Custom_Font_Apperance_OuterContent_H3"
+                android:text="more"
+                android:textSize="15sp" />
+
+
+        </RelativeLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:id="@+id/recyclerViewInner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relativeTop">
+
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/highlight" app:showAsAction="always" android:title="Highlight" />
+    <!--<item android:id="@+id/dictionary" app:showAsAction="always" android:title="Dictionary" />-->
+    <item android:id="@+id/note" app:showAsAction="always" android:title="Note" />
+    <item android:id="@+id/share" app:showAsAction="always" android:title="Share" />
+</menu>

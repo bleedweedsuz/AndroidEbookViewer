@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="121dp"
+    >
+
+    <RelativeLayout
+        android:layout_above="@+id/bottomMenuMainLayout"
+        android:background="#ddd"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomMenuMainLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <android.support.design.widget.TabLayout
+            android:layout_weight="2"
+            android:id="@+id/tabLayoutBottomMenu"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:elevation="3dp"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="#000"
+            app:tabIndicatorHeight="3dp"
+            app:tabMode="fixed">
+
+
+        </android.support.design.widget.TabLayout>
+
+        <RelativeLayout
+            android:background="?attr/selectableItemBackground"
+            android:focusable="true"
+            android:clickable="true"
+            android:elevation="3dp"
+            android:layout_weight="8"
+            android:id="@+id/bottomMenuSettingLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/settingImage"
+                android:layout_centerInParent="true"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:src="@drawable/icon_setting_unselect"/>
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPagerBottomMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomMenuMainLayout">
+
+
+    </android.support.v4.view.ViewPager>
+
+
+
+</RelativeLayout>

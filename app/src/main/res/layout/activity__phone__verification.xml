@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#ffffff"
+    tools:context=".Activity_Phone_Verification">
+    <android.support.v7.widget.Toolbar
+        android:elevation="10dp"
+        android:id="@+id/toolBar"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textSize="18sp"
+            android:textAppearance="@style/Custom_Font_Roboto"
+            android:layout_marginTop="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter the code that was sent to"/>
+
+        <TextView
+            android:id="@+id/textVerifiedPhone"
+            android:textSize="18.5sp"
+            android:textAppearance="@style/Custom_Font_Roboto"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.chaos.view.PinView
+            android:id="@+id/pinView"
+            style="@style/PinWidget.PinView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:cursorVisible="true"
+            android:inputType="number|numberSigned"
+            android:textSize="17sp"
+            app:cursorWidth="2dp"
+            app:itemCount="6"
+            app:itemHeight="40dp"
+            app:itemRadius="4dp"
+            app:itemSpacing="8dp"
+            app:itemWidth="44dp"
+            app:lineWidth="1.5dp"
+            app:viewType="rectangle" />
+
+        <RelativeLayout
+            android:onClick="VerifyCode_Click"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/card_button_reader"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:textSize="16sp"
+                android:textAppearance="@style/Custom_Font_Roboto"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Continue"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:padding="5dp"
+            android:onClick="ResendVerifyCode_Click"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="I didn't get a code"
+            android:textAppearance="@style/Custom_Font_Roboto"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</LinearLayout>

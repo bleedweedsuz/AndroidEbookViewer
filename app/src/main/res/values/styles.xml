@@ -1,0 +1,68 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="CustomWebViewTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">#787878</item>
+    </style>
+
+    <style name="FullyTranslucent" parent="android:Theme.Translucent.NoTitleBar">
+        <item name="android:progressBarStyle">@style/InvisibleProgress</item>
+    </style>
+
+    <style name="InvisibleProgress">
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="Custom_EditText" parent="AppTheme">
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+    <style name="Profile_Image_Theme" parent="AppTheme">
+        <item name="colorAccent">@color/colWhite</item>
+    </style>
+    <style name="Custom_Font_Apperance_OuterContent_H1">
+        <item name="fontFamily">@font/roboto_condensed_bold</item>
+    </style>
+    <style name="Custom_Font_Apperance_OuterContent_H2">
+        <item name="fontFamily">@font/roboto_bold</item>
+    </style>
+    <style name="Custom_Font_Apperance_OuterContent_H3">
+        <item name="fontFamily">@font/roboto_bold</item>
+    </style>
+    <style name="Custom_Font_Apperance_OuterContent_H4">
+        <item name="fontFamily">@font/roboto_light</item>
+    </style>
+    <style name="Custom_Font_Apperance_OuterContent_H5">
+        <item name="fontFamily">@font/roboto_condensed_regular</item>
+    </style>
+    <style name="Custom_Font_Roboto">
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+    <style name="FastScroll_Style">
+        <item name="fontFamily">@font/roboto_light</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="FinestWebViewTheme.Light_Custom" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/finestWhite</item>
+        <item name="colorPrimaryDark">@color/finestGray</item>
+        <item name="colorAccent">@color/finestBlack</item>
+        <item name="android:textColorPrimary">@color/finestBlack</item>
+        <item name="android:textColorSecondary">@color/finestSilver</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+
+    <style name="TabCaps" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+    </style>
+
+</resources>

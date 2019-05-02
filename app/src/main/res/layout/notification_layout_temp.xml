@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#eee">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_margin="6dp"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:src="@drawable/library_icon"/>
+
+    <LinearLayout
+        android:id="@+id/layoutMiddle"
+        android:orientation="vertical"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:maxWidth="240dp"
+                android:id="@+id/textHeader"
+                style="@style/TextAppearance.Compat.Notification.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Text Header"/>
+
+
+            <TextView
+                android:layout_marginRight="8dp"
+                style="@style/TextAppearance.Compat.Notification.Time"
+                android:layout_alignParentRight="true"
+                android:id="@+id/textTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3:44 PM"/>
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="8dp"
+            android:id="@+id/textBody"
+            style="@style/TextAppearance.Compat.Notification.Info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Text Body"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

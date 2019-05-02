@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="zkagazapahtnajusz.paperproject.com.paperproject.Activity_SearchStore">
+
+    <android.support.v7.widget.Toolbar
+        android:background="#fff"
+        android:id="@+id/toolbarSearchFilter"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:elevation="3dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_alignParentTop="true"
+                android:id="@+id/layoutTop"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="54dp">
+                <ImageView
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="15dp"
+                    android:id="@+id/imageBack"
+                    android:src="@drawable/icon_back"
+                    android:layout_width="55dp"
+                    android:layout_height="54dp" />
+
+                <android.support.v7.widget.SearchView
+                    android:layout_marginLeft="-12dp"
+                    android:layout_weight="1"
+                    app:queryBackground="@android:color/transparent"
+                    app:queryHint="Search in Store"
+                    android:id="@+id/searchView"
+                    app:iconifiedByDefault="true"
+                    android:focusable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                </android.support.v7.widget.SearchView>
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/searchFilter"
+                    android:background="?attr/selectableItemBackground"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:layout_width="46dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/icon_filter"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="25dp"
+                android:layout_below="@id/layoutTop"
+                android:paddingRight="8dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:background="@color/colorGrey"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp">
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:padding="4dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <Spinner
+                        android:paddingLeft="0dp"
+                        android:paddingRight="32dp"
+
+                        android:layout_margin="2dp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:dropDownVerticalOffset="45dp"
+                        android:spinnerMode="dropdown"
+                        android:id="@+id/spinnerGenre"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <Spinner
+                        android:paddingLeft="0dp"
+                        android:paddingRight="32dp"
+
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:dropDownVerticalOffset="45dp"
+                        android:spinnerMode="dropdown"
+                        android:id="@+id/spinnerAuthor"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <Spinner
+                        android:visibility="gone"
+                        android:paddingLeft="0dp"
+                        android:paddingRight="32dp"
+
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:dropDownVerticalOffset="45dp"
+                        android:spinnerMode="dropdown"
+                        android:id="@+id/spinnerDisplay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="4dp"
+                    android:onClick="SearchButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/card_button_reader"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/search_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="Search Book"
+                        android:textAppearance="@style/Custom_Font_Roboto"
+                        android:textColor="#444"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_below="@id/toolbarSearchFilter"
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerSearchPage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:visibility="invisible"
+        android:id="@+id/NoDataFoundView"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/exclamation_icon" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Data Found"
+                    android:textAppearance="@style/Custom_Font_Roboto"
+                    android:textColor="#333"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:text="add new post from post section"
+                    android:id="@+id/titleDataNotFound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="2dp"
+                    android:textAppearance="@style/Custom_Font_Apperance_OuterContent_H4"
+                    android:textColor="#555"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

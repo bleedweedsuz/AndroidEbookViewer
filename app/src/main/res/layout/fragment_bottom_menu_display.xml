@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.TabLayout
+        app:tabGravity="fill"
+        app:tabIndicatorHeight="4dp"
+        app:tabIndicatorColor="#111"
+        app:tabPaddingStart="0dp"
+        app:tabPaddingEnd="0dp"
+        android:id="@+id/tabBottomMenuDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.design.widget.TabLayout>
+</RelativeLayout>

@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activity_PushNotifications">
+
+    <ScrollView
+        android:layout_below="@id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:padding="8dp"
+                    android:src="@drawable/icon_setting"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+                <TextView
+                    android:gravity="center_vertical"
+                    android:id="@+id/toolbarTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="Settings"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ccc">
+            </RelativeLayout>
+
+            <LinearLayout
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Antialiasing"
+                        android:textAppearance="@style/Custom_Font_Roboto"
+                        android:textColor="#444"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <com.suke.widget.SwitchButton
+                        android:id="@+id/Antialiasing_Switch"
+                        android:layout_width="55dp"
+                        android:layout_height="28dp"
+                        android:layout_alignParentRight="true"
+                        app:sb_background="#eee"
+                        app:sb_checked="true"
+                        app:sb_checked_color="#000"
+                        app:sb_show_indicator="false" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/Custom_Font_Roboto"
+                    android:text="improve rendering on low-res screens"
+                    android:textColor="#777777"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Double Tap"
+                        android:textAppearance="@style/Custom_Font_Roboto"
+                        android:textColor="#444"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <com.suke.widget.SwitchButton
+                        android:id="@+id/Double_Switch"
+                        android:layout_width="55dp"
+                        android:layout_height="28dp"
+                        android:layout_alignParentRight="true"
+                        app:sb_background="#eee"
+                        app:sb_checked="true"
+                        app:sb_checked_color="#000"
+                        app:sb_show_indicator="false" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/Custom_Font_Roboto"
+                    android:text="double tap to zoom"
+                    android:textColor="#777777"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Auto Spacing"
+                        android:textAppearance="@style/Custom_Font_Roboto"
+                        android:textColor="#444"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <com.suke.widget.SwitchButton
+                        android:id="@+id/AutoSpacing_Switch"
+                        android:layout_width="55dp"
+                        android:layout_height="28dp"
+                        android:layout_alignParentRight="true"
+                        app:sb_background="#eee"
+                        app:sb_checked="false"
+                        app:sb_checked_color="#000"
+                        app:sb_show_indicator="false" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_marginEnd="55dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/Custom_Font_Roboto"
+                    android:text="add dynamic spacing to fit each page on its own on the screen"
+                    android:textColor="#777777"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Scrollable"
+                        android:textAppearance="@style/Custom_Font_Roboto"
+                        android:textColor="#444"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <com.suke.widget.SwitchButton
+                        android:id="@+id/Scrollable_Switch"
+                        android:layout_width="55dp"
+                        android:layout_height="28dp"
+                        android:layout_alignParentEnd="true"
+                        app:sb_background="#eee"
+                        app:sb_checked="true"
+                        app:sb_checked_color="#000"
+                        app:sb_show_indicator="false" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/Custom_Font_Roboto"
+                    android:text="change view changing type"
+                    android:textColor="#777777"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Swipe Orientation"
+                        android:textAppearance="@style/Custom_Font_Roboto"
+                        android:textColor="#444"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/Orientation_Spinner"
+                        android:textAlignment="textEnd"
+                        android:layout_marginStart="-10dp"
+                        android:entries="@array/PDF_orientation"
+                        android:minWidth="100dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/Custom_Font_Roboto"
+                    android:text="use for changing viewing mode"
+                    android:textColor="#777777"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Page Fit Policy"
+                        android:textAppearance="@style/Custom_Font_Roboto"
+                        android:textColor="#444"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                    <Spinner
+                        android:id="@+id/PageFitPolicy_Spinner"
+                        android:textAlignment="textEnd"
+                        android:layout_marginRight="-10dp"
+                        android:entries="@array/PDF_fitpolicy"
+                        android:minWidth="100dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/Custom_Font_Roboto"
+                    android:text="use to improve UI experience"
+                    android:textColor="#777777"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

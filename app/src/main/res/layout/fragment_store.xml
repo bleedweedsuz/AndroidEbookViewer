@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_lib"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <com.darwindeveloper.horizontalscrollmenulibrary.custom_views.HorizontalScrollMenuView
+        app:item_marginTop="-2dp"
+        app:item_marginBottom="2dp"
+        app:item_backgroundColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/horizontalScrollMenuView"
+        app:item_colorSelected = "@color/colorAccent"
+        app:icon_height="21dp"
+        app:icon_width="21dp"
+        app:item_textColor ="#333" />
+
+    <RelativeLayout
+        android:layout_marginLeft="2dp"
+        android:layout_width="15dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/topBarPrev"
+            android:layout_width="15dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="PREV"
+            android:src="@drawable/icon_previous" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginRight="2dp"
+        android:layout_width="15dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true">
+        <ImageView
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/topBarNext"
+            android:layout_width="15dp"
+            android:layout_height="40dp"
+            android:contentDescription="NEXT"
+            android:src="@drawable/icon_next" />
+    </RelativeLayout>
+
+
+
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_below="@+id/horizontalScrollMenuView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/swipeRefresh">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView_Store"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+   <TextView
+        android:visibility="invisible"
+        android:layout_marginRight="12dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:background="#dd000000"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:id="@+id/textCheck"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="A"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:background="#fff"
+        android:visibility="invisible"
+        android:id="@+id/NoDataFoundView"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/exclamation_icon" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Data Found"
+                    android:textAppearance="@style/Custom_Font_Roboto"
+                    android:textColor="#333"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:text="no books found in the store, please try again later"
+                    android:id="@+id/titleDataNotFound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="2dp"
+                    android:textAppearance="@style/Custom_Font_Apperance_OuterContent_H4"
+                    android:textColor="#555"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/ProgressWrapper"
+        android:visibility="gone"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:indeterminate="true"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

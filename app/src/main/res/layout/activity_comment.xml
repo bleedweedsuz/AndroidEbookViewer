@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="zkagazapahtnajusz.paperproject.com.paperproject.Activity_Comment">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBarComment"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#fff"
+        android:elevation="3dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp">
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Custom_Font_Apperance_OuterContent_H2"
+                android:text="Comments"
+                android:textColor="#333"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_above="@+id/layoutBottom"
+        android:layout_below="@+id/toolBarComment"
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewComment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:id="@+id/commentProgressCheck"
+        android:layout_above="@+id/layoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp" />
+    <LinearLayout
+        android:id="@+id/layoutBottom"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:paddingLeft="12dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageCommentUser"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@color/colorImageBlank"/>
+
+        <EditText
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:maxLength="200"
+            android:id="@+id/editComment"
+            android:textColorHint="#bbb"
+            android:layout_weight="1"
+            android:textSize="15.5sp"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="15dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:hint="Add a comment..."
+            android:layout_marginStart="15dp" />
+
+        <TextView
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:onClick="AddComment_Click"
+            android:id="@+id/textPost"
+            android:padding="5dp"
+            android:textAppearance="@style/Custom_Font_Roboto"
+            android:textColor="#5c5c5c"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:text="Post"
+
+            />
+
+
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/MainView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="84dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="3dp"
+    android:layout_marginBottom="4dp">
+
+    <RelativeLayout
+        android:id="@+id/hBar"
+        android:background="#ddd"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/hBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp">
+            <RelativeLayout
+                android:layout_weight="7.5"
+                android:id="@+id/imageContainer"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:paddingBottom="2dp"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp"
+                android:paddingTop="2dp">
+
+                <ImageView
+                    android:id="@+id/recyclerItemImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@color/colorImageBlank" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="2.5"
+                android:id="@+id/textContainer"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginRight="2dp"
+                android:background="#fff"
+                android:padding="4dp">
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/recyclerItemName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:paddingEnd="38dp"
+                        android:textAppearance="@style/Custom_Font_Apperance_OuterContent_H1"
+                        android:textColor="@color/colorLibraryMenuSelect"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/relativeLayout"
+                    android:layout_centerHorizontal="true"
+                    android:paddingEnd="5dp">
+                    <TextView
+                        android:id="@+id/recyclerItemDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:textAppearance="@style/Custom_Font_Apperance_OuterContent_H4"
+                        android:textSize="11sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

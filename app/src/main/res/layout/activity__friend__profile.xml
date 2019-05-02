@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="zkagazapahtnajusz.paperproject.com.paperproject.Activity_UserProfile">
+    <LinearLayout
+        android:elevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="right|center">
+
+    </LinearLayout>
+    <android.support.design.widget.AppBarLayout
+        app:layout_behavior="zkagaznajus.paperproject.com.paperproject.Utilities.FixAppBarLayoutBehavior"
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="390dp">
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="#fff"
+            app:title="Yoo">
+
+            <android.support.design.widget.CoordinatorLayout
+                app:layout_collapseMode="parallax"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="340dp">
+
+                <ImageView
+                    android:id="@+id/profileBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/topRelativeHolder"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                </RelativeLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    app:civ_border_color="#efefef"
+                    app:civ_border_width="2dp"
+                    android:id="@+id/profileImage"
+                    android:src="@color/colWhite"
+                    android:theme="@style/Profile_Image_Theme"
+                    android:scaleType="centerCrop"
+                    app:layout_anchorGravity="center|bottom"
+                    app:layout_anchor="@id/topRelativeHolder"
+                    android:layout_height="110dp"
+                    android:layout_width="110dp" />
+
+                <RelativeLayout
+                    android:layout_gravity="bottom"
+                    app:layout_anchor="@id/topRelativeHolder"
+                    app:layout_anchorGravity="bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="228dp">
+
+                    <TextView
+                        android:layout_marginTop="55dp"
+                        android:id="@+id/textProfileUserName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:elevation="5dp"
+                        android:textAppearance="@style/Custom_Font_Apperance_OuterContent_H1"
+                        android:text="n/a"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+
+                    <LinearLayout
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:onClick="ButtonFollow_Click"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:background="@drawable/round_button3"
+                        android:gravity="center"
+                        android:layout_marginTop="9dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/textProfileUserName"
+                        android:id="@+id/buttonFriendProfileFollow"
+                        android:orientation="horizontal"
+                        android:layout_width="126dp"
+                        android:layout_height="41dp">
+
+                        <ImageView
+                            android:id="@+id/imageFriendProfileFollow"
+                            android:src="@drawable/icon_follow_white"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp" />
+
+                        <TextView
+                            android:id="@+id/textFriendProfileFollow"
+                            android:textColor="#fff"
+                            android:textSize="15sp"
+                            android:textAppearance="@style/Custom_Font_Apperance_OuterContent_H3"
+                            android:layout_marginLeft="7dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Follow"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="9dp"
+                        android:gravity="top|center"
+                        android:orientation="horizontal"
+                        android:layout_below="@id/buttonFriendProfileFollow"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:id="@+id/buttonUserFollowers"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:layout_width="92dp"
+                            android:layout_height="70dp">
+                            <TextView
+                                android:id="@+id/textProfileFollowers"
+                                android:textAppearance="@style/Custom_Font_Apperance_OuterContent_H3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textColor="#fff"
+                                android:textSize="18sp"/>
+
+                            <TextView
+                                android:layout_marginTop="2dp"
+                                android:textStyle="bold"
+                                android:textAppearance="@style/Custom_Font_Apperance_OuterContent_H3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Followers"
+                                android:textColor="#eee"
+                                android:textSize="15sp"/>
+
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_marginTop="22dp"
+                            android:layout_width="1dp"
+                            android:layout_height="28dp"
+                            android:background="#eee" />
+                        <LinearLayout
+                            android:onClick="Post_OnClick"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:id="@+id/buttonUserPost"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:layout_width="92dp"
+                            android:layout_height="70dp">
+                            <TextView
+                                android:id="@+id/textProfilePost"
+                                android:textAppearance="@style/Custom_Font_Apperance_OuterContent_H3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textColor="#fff"
+                                android:textSize="18sp"/>
+
+                            <TextView
+                                android:layout_marginTop="2dp"
+                                android:textStyle="bold"
+                                android:textAppearance="@style/Custom_Font_Apperance_OuterContent_H3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Posts"
+                                android:textColor="#fff"
+                                android:textSize="15sp"/>
+
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_marginTop="22dp"
+                            android:layout_width="1dp"
+                            android:layout_height="28dp"
+                            android:background="#eee"
+                            />
+
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:id="@+id/buttonUserFollowing"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:layout_width="92dp"
+                            android:layout_height="70dp">
+                            <TextView
+                                android:id="@+id/textProfileFollowing"
+                                android:textAppearance="@style/Custom_Font_Apperance_OuterContent_H3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textColor="#fff"
+                                android:textSize="18sp"/>
+
+                            <TextView
+                                android:layout_marginTop="2dp"
+                                android:textStyle="bold"
+                                android:textAppearance="@style/Custom_Font_Apperance_OuterContent_H3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Following"
+                                android:textColor="#fff"
+                                android:textSize="15sp"/>
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+
+
+
+
+            </android.support.design.widget.CoordinatorLayout>
+
+
+            <android.support.v7.widget.Toolbar
+                android:elevation="3dp"
+                app:layout_scrollFlags="scroll|enterAlways"
+                android:id="@+id/toolbar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                android:layout_width="match_parent"
+                app:layout_collapseMode="pin"
+                android:layout_height="?attr/actionBarSize"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp"
+                app:contentInsetStartWithNavigation="0dp">
+
+                <LinearLayout
+                    app:layout_collapseMode="pin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textToolbarUserName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/Custom_Font_Apperance_OuterContent_H2"
+                        android:text="n/a"
+                        android:textColor="#000"
+                        android:textSize="19sp"/>
+
+                </LinearLayout>
+
+
+
+            </android.support.v7.widget.Toolbar>
+
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+        <android.support.design.widget.TabLayout
+            android:layout_gravity="bottom"
+            android:background="#fff"
+            android:id="@+id/tabLayoutUserProfile"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:tabMode="fixed"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/colorAccent"
+            app:tabIndicatorHeight="3dp"
+            android:elevation="3dp">
+
+        </android.support.design.widget.TabLayout>
+    </android.support.design.widget.AppBarLayout>
+    <zkagazapahtnajusz.paperproject.com.paperproject.Utilities.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPagerUserProfile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v4.view.ViewPager>
+        </RelativeLayout>
+    </zkagazapahtnajusz.paperproject.com.paperproject.Utilities.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

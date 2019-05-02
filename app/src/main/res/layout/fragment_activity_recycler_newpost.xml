@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_marginBottom="5dp"
+        android:clickable="true"
+        android:elevation="5dp"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:id="@+id/NewPostContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center|left">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:src="@color/colorImageBlank"
+            android:id="@+id/ProfileImage"
+            android:layout_margin="8dp"
+            android:scaleType="centerCrop"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            />
+
+        <RelativeLayout
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/round_button"
+            android:layout_width="match_parent"
+            android:layout_height="42dp">
+
+            <TextView
+                android:textColor="#666"
+                android:textAppearance="@style/Custom_Font_Apperance_OuterContent_H3"
+                android:textSize="15.5sp"
+                android:layout_marginLeft="22dp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What's on your mind?"/>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

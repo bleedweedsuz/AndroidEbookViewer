@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="zkagazapahtnajusz.paperproject.com.paperproject.Activity_Home">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/activityHomeToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#fff"
+        android:elevation="3dp">
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/paper_icon_home" />
+                <TextView
+                    android:id="@+id/toolbarTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="Library"
+                    android:textColor="#666666"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mainHolderMain"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:gravity="right|center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/buttonRecentlyViewedActivityhome"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginRight="11dp"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:onClick="onActivityMainClick"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        app:srcCompat="@drawable/reading_now_hands" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/NotificationLists"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginRight="14dp"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:onClick="openNotificationMain"
+                    android:padding="4dp">
+
+                    <ImageView
+                        android:id="@+id/NotificationIcon"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:padding="2dp"
+                        app:srcCompat="@drawable/notification_1" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/buttonSearch"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginRight="11dp"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:onClick="onActivityMainClick"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/searchOptionIcon"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        app:srcCompat="@drawable/search_icon" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/recyclerImageChangerMain"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginRight="14dp"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:onClick="onClickRecyclerLayoutChange"
+                    android:padding="4dp">
+
+                    <ImageView
+                        android:id="@+id/recyclerImageChanger"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+
+                        app:srcCompat="@drawable/single" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/recyclerProfilePic"
+                    android:layout_width="36dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="14dp"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:onClick="openProfile">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profilePicture"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_margin="4dp"
+                        android:layout_marginStart="0dp" />
+
+                    <ImageView
+                        android:id="@+id/requestIndicatorView"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginRight="4dp"
+                        android:elevation="10dp"
+                        android:src="@drawable/indicator" />
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.Toolbar>
+    <android.support.design.widget.TabLayout
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="#000"
+        app:tabIndicatorHeight="3dp"
+        android:elevation="10dp">
+    </android.support.design.widget.TabLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activityHomeToolBar"
+        android:layout_above="@id/tabLayout">
+    </android.support.v4.view.ViewPager>
+</RelativeLayout>

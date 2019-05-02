@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activity_PushNotifications" android:background="#ffffff">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#fff"
+        android:elevation="3dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp">
+
+        <TextView
+            android:id="@+id/toolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="Push Notifications"
+            android:textColor="#666666"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_below="@id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/PostNotification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:padding="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_centerVertical="true"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="User Post Notification"
+                            android:textAppearance="@style/Custom_Font_Roboto"
+                            android:textColor="#444"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/Custom_Font_Roboto"
+                        android:text="notification for posts"
+                        android:textColor="#777777"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingLeft="30dp"
+                    android:paddingRight="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_centerVertical="true"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="New Post Added"
+                            android:textAppearance="@style/Custom_Font_Roboto"
+                            android:textColor="#444"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <com.suke.widget.SwitchButton
+                            android:id="@+id/PostAddSwitch"
+                            android:layout_width="55dp"
+                            android:layout_height="28dp"
+                            android:layout_alignParentRight="true"
+                            app:sb_background="#eee"
+                            app:sb_checked="true"
+                            app:sb_checked_color="#000"
+                            app:sb_show_indicator="false" />
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/Custom_Font_Roboto"
+                        android:text="notify if new post added"
+                        android:textColor="#777777"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingLeft="30dp"
+                    android:paddingRight="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text="New Post Comment"
+                            android:textAlignment="center"
+                            android:textAppearance="@style/Custom_Font_Roboto"
+                            android:textColor="#444"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <com.suke.widget.SwitchButton
+                            android:id="@+id/PostCommentSwitch"
+                            android:layout_width="55dp"
+                            android:layout_height="28dp"
+                            android:layout_alignParentRight="true"
+                            app:sb_background="#eee"
+                            app:sb_checked="true"
+                            app:sb_checked_color="#000"
+                            app:sb_show_indicator="false" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="notify if new comment is added in post"
+                        android:textAppearance="@style/Custom_Font_Roboto"
+                        android:textColor="#777777"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingLeft="30dp"
+                    android:paddingRight="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text="New Post Like"
+                            android:textAlignment="center"
+                            android:textAppearance="@style/Custom_Font_Roboto"
+                            android:textColor="#444"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <com.suke.widget.SwitchButton
+                            android:id="@+id/PostLikeSwitch"
+                            android:layout_width="55dp"
+                            android:layout_height="28dp"
+                            android:layout_alignParentRight="true"
+                            app:sb_background="#eee"
+                            app:sb_checked="true"
+                            app:sb_checked_color="#000"
+                            app:sb_show_indicator="false" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="notify if new like is added in post"
+                        android:textAppearance="@style/Custom_Font_Roboto"
+                        android:textColor="#777777"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ccc">
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/BookNotification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:padding="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_centerVertical="true"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Book Notification"
+                            android:textAppearance="@style/Custom_Font_Roboto"
+                            android:textColor="#444"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/Custom_Font_Roboto"
+                        android:text="notification for book"
+                        android:textColor="#777777"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingLeft="30dp"
+                    android:paddingRight="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text="New Book Comment"
+                            android:textAlignment="center"
+                            android:textAppearance="@style/Custom_Font_Roboto"
+                            android:textColor="#444"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <com.suke.widget.SwitchButton
+                            android:id="@+id/BookCommentSwitch"
+                            android:layout_width="55dp"
+                            android:layout_height="28dp"
+                            android:layout_alignParentRight="true"
+                            app:sb_background="#eee"
+                            app:sb_checked="true"
+                            app:sb_checked_color="#000"
+                            app:sb_show_indicator="false" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="notify if new comment is added in followed book"
+                        android:textAppearance="@style/Custom_Font_Roboto"
+                        android:textColor="#777777"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingLeft="30dp"
+                    android:paddingRight="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text="New Book Like"
+                            android:textAlignment="center"
+                            android:textAppearance="@style/Custom_Font_Roboto"
+                            android:textColor="#444"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <com.suke.widget.SwitchButton
+                            android:id="@+id/BookLikeSwitch"
+                            android:layout_width="55dp"
+                            android:layout_height="28dp"
+                            android:layout_alignParentRight="true"
+                            app:sb_background="#eee"
+                            app:sb_checked="true"
+                            app:sb_checked_color="#000"
+                            app:sb_show_indicator="false" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="notify if new like is added in book"
+                        android:textAppearance="@style/Custom_Font_Roboto"
+                        android:textColor="#777777"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ccc">
+            </RelativeLayout>
+
+            <LinearLayout
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Follow Request"
+                        android:textAppearance="@style/Custom_Font_Roboto"
+                        android:textColor="#444"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <com.suke.widget.SwitchButton
+                        android:id="@+id/FollowRequestSwitch"
+                        android:layout_width="55dp"
+                        android:layout_height="28dp"
+                        android:layout_alignParentRight="true"
+                        app:sb_background="#eee"
+                        app:sb_checked="true"
+                        app:sb_checked_color="#000"
+                        app:sb_show_indicator="false" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/Custom_Font_Roboto"
+                    android:text="notify if follow request come"
+                    android:textColor="#777777"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="vertical"
+    android:paddingRight="19dp"
+    android:paddingLeft="19dp">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginLeft="8dp"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/icon_cloud_off"
+            />
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textColor="#333"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textAppearance="@style/Custom_Font_Roboto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Internet"/>
+
+            <TextView
+                android:textColor="#555"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="2dp"
+                android:textSize="14sp"
+                android:textAppearance="@style/Custom_Font_Apperance_OuterContent_H4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your network is unavailable.Check your data or Wi-Fi connection."/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:background="#ddd"
+        android:layout_below="@id/linearTop"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:textColor="#444"
+            android:textSize="15sp"
+            android:textAppearance="@style/Custom_Font_Apperance_OuterContent_H4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pull down to refresh"/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:background="#ddd"
+        android:layout_below="@id/linearTop"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+
+    </RelativeLayout>
+
+
+</LinearLayout>

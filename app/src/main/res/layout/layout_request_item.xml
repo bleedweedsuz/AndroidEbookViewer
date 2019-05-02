@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+        <LinearLayout
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@id/holderFollow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginEnd="8dp"
+        android:layout_toStartOf="@id/holderFollow">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userimage"
+            android:layout_margin="9dp"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:background="@drawable/drawable_circle"
+            />
+
+        <TextView
+            android:id="@+id/UserFullName"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textAppearance="@style/Custom_Font_Apperance_OuterContent_H2"
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/holderFollow"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/Accept"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/card_button_reader"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp">
+
+            <TextView
+                android:text="Accept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textAppearance="@style/Custom_Font_Roboto"
+                android:textColor="#000"
+                android:textSize="13.5sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:gravity="center"
+            android:id="@+id/Decline"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/card_button_reader"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/icon_del"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
+
+
+
+

@@ -1,0 +1,18 @@
+body {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    overflow: visible;
+}
+
+#area {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+}
+
+#area iframe {
+  border: none;
+}

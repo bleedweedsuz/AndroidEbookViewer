@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#aaa</color>
+    <color name="colorPrimaryDark">#cccccc</color>
+    <color name="colorAccent">#000000</color>
+    <color name="colWhite">#ffffff</color>
+    <color name="colorGrey">#999999</color>
+    <color name="colorImageBlank">#e6e6e6</color>
+    <color name="colorRipple">#ededed</color>
+
+    <color name="NotificationNotRead">#f4f4f4</color>
+    <color name="NotificationRead">#ffffff</color>
+
+    <color name="colorDrawableInfoPlaceholder">#e7e6e6</color>
+    <color name="colorDrawableErrorPlaceholder">#bcbcbc</color>
+
+    <color name="colorLibraryMenuDelete">#fdf2f2</color>
+    <color name="colorLibraryMenuSelect">#333</color>
+    <color name="progressDialogPositiveTextColor">#5b5b5b</color>
+
+    <array name="highlightColorPallet">
+        <item>#6bdc87</item>
+        <item>#ffdb00</item>
+        <item>#6cdfdc</item>
+        <item>#f8e8c0</item>
+    </array>
+    <array name="noteColorPallet">
+        <item>#f7e5c1</item>
+        <item>#f2c875</item>
+        <item>#9bf9e6</item>
+        <item>#f59982</item>
+    </array>
+    <color name="top_bottomBar">#e6ffffff</color>
+</resources>

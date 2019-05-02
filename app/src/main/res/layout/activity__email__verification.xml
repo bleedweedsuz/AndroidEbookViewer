@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Email_Verification" android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/tTop"
+        android:textSize="21sp"
+        android:textAppearance="@style/Custom_Font_Apperance_OuterContent_H2"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EMAIL VERIFICATION"/>
+
+    <TextView
+        android:id="@+id/tSecond"
+        android:textAppearance="@style/Custom_Font_Roboto"
+        android:textSize="17sp"
+        android:textAlignment="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tTop"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="We sent you a link to verify. Please check your inbox"/>
+
+    <TextView
+        android:id="@+id/verificationEmail"
+        android:layout_marginTop="10dp"
+        android:textAppearance="@style/Custom_Font_Apperance_OuterContent_H3"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="abc@xyz.com"/>
+
+
+    <LinearLayout
+        android:onClick="OnVerified_Click"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:id="@+id/buttonVerified"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/verificationEmail"
+        android:background="@drawable/card_button_reader"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/imageIcon"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@id/imageIcon">
+        <TextView
+            android:id="@+id/textPurchaseFree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I Have Verified"
+            android:textAppearance="@style/Custom_Font_Roboto"
+            android:textColor="#444"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:onClick="OnResendEmail_Click"
+        android:background="@drawable/card_button_reader"
+        android:textSize="15sp"
+        android:textAppearance="@style/Custom_Font_Roboto"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:id="@+id/textResendEmail"
+        android:paddingBottom="9dp"
+        android:paddingTop="9dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/buttonVerified"
+        android:text="Resend Verify Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

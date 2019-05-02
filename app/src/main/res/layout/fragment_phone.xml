@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="4dp">
+    <LinearLayout
+        android:background="#fff"
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp">
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/containerPhone"
+                android:layout_width="match_parent"
+                android:layout_height="75dp">
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/textSignUpPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/Custom_Font_Roboto"
+                    android:text="@string/activitySignUp_Phone"
+                    android:textColor="#bbbbc6"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="4dp" />
+
+                <com.rilixtech.CountryCodePicker
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:gravity="center"
+                    android:id="@+id/countryCodePicker"
+                    android:layout_below="@id/textSignUpPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+
+                <EditText
+                    android:id="@+id/editSignUpPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/textSignUpPhone"
+                    android:layout_toEndOf="@id/countryCodePicker"
+                    android:background="@drawable/edittext_selector"
+                    android:inputType="phone"
+                    android:paddingTop="3dp"
+                    android:textAppearance="@style/Custom_Font_Roboto"
+                    android:textColor="#222222"
+                    android:textSize="15.5sp" />
+            </RelativeLayout>
+        </android.support.design.widget.CoordinatorLayout>
+    </LinearLayout>
+</LinearLayout>

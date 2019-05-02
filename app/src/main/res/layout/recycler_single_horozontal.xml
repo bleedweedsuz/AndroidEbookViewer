@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/selectBook"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp">
+    <ImageView
+        android:src="@color/colorImageBlank"
+        android:layout_width="130dp"
+        android:layout_height="180dp"
+        android:id="@+id/imageRecyclerHorizontal" />
+    <TextView
+        android:gravity="center"
+        android:id="@+id/textRecyclerHorizontal"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/H5_Outside_Content"
+        android:textAppearance="@style/Custom_Font_Apperance_OuterContent_H3"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_marginTop="5dp"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/imageRecyclerHorizontal"
+        android:textAlignment="center"
+        android:layout_marginBottom="17dp"/>
+</RelativeLayout>

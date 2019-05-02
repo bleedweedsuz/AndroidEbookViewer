@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:layout_marginBottom="3dp"
+    android:elevation="5dp"
+    android:layout_marginLeft="11dp"
+    android:layout_marginRight="11dp"
+    android:layout_marginTop="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+
+                android:src="@color/colorImageBlank"
+                android:id="@+id/ProfileImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp" />
+            <LinearLayout
+                android:layout_toRightOf="@id/ProfileImage"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:id="@+id/UserFullName"
+                    android:layout_marginLeft="12dp"
+                    android:textSize="16sp"
+                    android:textAppearance="@style/Custom_Font_Roboto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textPostDate"
+                    android:layout_marginLeft="12dp"
+                    android:textColor="#aaa"
+                    android:textSize="13sp"
+                    android:layout_marginTop="1dp"
+                    android:textAppearance="@style/Custom_Font_Roboto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/optionMenu"
+                android:clickable="true"
+                android:elevation="5dp"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_marginRight="8dp"
+                android:padding="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="28dp"
+                android:layout_height="36dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/more_vert"/>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textPostDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="26dp"
+            android:lineSpacingExtra="2dp"
+            android:textAlignment="viewStart"
+            android:layout_marginBottom="5dp"
+            android:gravity="start" />
+
+
+        <RelativeLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="12dp"
+            android:background="#e1e1e1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:textColor="#999"
+                android:fontFamily="@font/roboto_light"
+                android:textSize="14.5sp"
+                android:id="@+id/textTimeAgo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <LinearLayout
+                android:layout_toLeftOf="@id/layoutComment"
+                android:id="@+id/layoutLike"
+                android:clickable="true"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical|right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:layout_marginEnd="8dp">
+
+                <ImageView
+                    android:id="@+id/imageLike"
+                    android:layout_width="21.5dp"
+                    android:layout_height="21.5dp"
+                    android:src="@drawable/icon_new_like_dim"/>
+                <TextView
+                    android:id="@+id/PostLikeText"
+                    android:minWidth="30dp"
+                    android:textColor="#888"
+                    android:textSize="15sp"
+                    android:textAppearance="@style/Custom_Font_Apperance_OuterContent_H1"
+                    android:layout_marginLeft="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_marginStart="4dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:id="@+id/layoutComment"
+                android:layout_marginRight="15dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical|right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:layout_marginEnd="15dp">
+
+
+                <ImageView
+                    android:id="@+id/imageComment"
+                    android:layout_width="20.5dp"
+                    android:layout_height="20.5dp"
+                    android:src="@drawable/icon_comment"/>
+
+                <TextView
+                    android:id="@+id/PostCommentText"
+                    android:minWidth="30dp"
+                    android:textColor="#888"
+                    android:textSize="15sp"
+                    android:textAppearance="@style/Custom_Font_Apperance_OuterContent_H1"
+                    android:layout_marginLeft="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_marginStart="4dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

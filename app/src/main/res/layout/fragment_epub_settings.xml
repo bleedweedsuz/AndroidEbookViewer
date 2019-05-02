@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activity_PushNotifications">
+
+    <ScrollView
+        android:layout_below="@id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:padding="8dp"
+                    android:src="@drawable/icon_setting"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+                <TextView
+                    android:gravity="center_vertical"
+                    android:id="@+id/toolbarTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="Settings"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ccc">
+            </RelativeLayout>
+
+            <LinearLayout
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="Volume Keys"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/Custom_Font_Roboto"
+                        android:textColor="#444"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <com.suke.widget.SwitchButton
+                        android:id="@+id/volumekeySwitch"
+                        android:layout_width="55dp"
+                        android:layout_height="28dp"
+                        android:layout_alignParentRight="true"
+                        app:sb_background="#eee"
+                        app:sb_checked="true"
+                        app:sb_checked_color="#000"
+                        app:sb_show_indicator="false" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="use volume keys to turn pages"
+                    android:textAppearance="@style/Custom_Font_Roboto"
+                    android:textColor="#777777"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="Page Curl Animation (Beta)"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/Custom_Font_Roboto"
+                        android:textColor="#444"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <com.suke.widget.SwitchButton
+                        android:id="@+id/pageCurlSwitch"
+                        android:layout_width="55dp"
+                        android:layout_height="28dp"
+                        android:layout_alignParentRight="true"
+                        app:sb_background="#eee"
+                        app:sb_checked="false"
+                        app:sb_checked_color="#000"
+                        app:sb_show_indicator="false" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="turn on of you like curl animation"
+                    android:textAppearance="@style/Custom_Font_Roboto"
+                    android:textColor="#777777"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ccc">
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/swipeOrientationContainer"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/t3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="55dp"
+                    android:text="Swipe Orientation"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/Custom_Font_Roboto"
+                    android:textColor="#444"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/t3"
+                    android:text="use for to page change"
+                    android:textAppearance="@style/Custom_Font_Roboto"
+                    android:textColor="#777777"
+                    android:textSize="12sp" />
+
+                <Spinner
+                    android:layout_marginEnd="-10dp"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/swipeOrientation"
+                    android:textAlignment="textEnd"
+                    android:entries="@array/EPUB_orientation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/noteColor"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/t1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="55dp"
+                    android:text="Note Color"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/Custom_Font_Roboto"
+                    android:textColor="#444"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/t1"
+                    android:text="use color indicator for note"
+                    android:textAppearance="@style/Custom_Font_Roboto"
+                    android:textColor="#777777"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/noteColorView"
+                    android:background="#faf1cc"
+                    android:layout_width="55dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/highlightColor"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/t2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="55dp"
+                    android:text="Highlight Color"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/Custom_Font_Roboto"
+                    android:textColor="#444"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/t2"
+                    android:text="use color indicator for highlight"
+                    android:textAppearance="@style/Custom_Font_Roboto"
+                    android:textColor="#777777"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/highlightColorView"
+                    android:background="#6bdc87"
+                    android:layout_width="55dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/updateDictionary"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Update Dictionary Data"
+                        android:textAppearance="@style/Custom_Font_Roboto"
+                        android:textColor="#444"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/clearViewCache"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Clear View Cache"
+                        android:textAppearance="@style/Custom_Font_Roboto"
+                        android:textColor="#444"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
