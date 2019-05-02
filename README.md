@@ -73,4 +73,6 @@ Used Library:
     implementation 'com.github.joielechong:countrycodepicker:2.1.5'
     
 
+Disclaimer: all the asset used in the project is used from free assets packages, if anything is missing and forgot to mention please contact me.
+
 Created by Sujan Thapa & Saujan Thapa
